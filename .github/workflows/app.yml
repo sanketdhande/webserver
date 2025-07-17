@@ -45,9 +45,6 @@ jobs:
       - name: Install linters and security tools
         run: |
           pip install flake8 bandit
-
-      - name: Run flake8
-        run: flake8 .
-
-      - name: Run bandit
-        run: bandit -r .
+      
+      - name: Run tox
+        run: tox
